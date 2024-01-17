@@ -1,0 +1,16 @@
+Telebler.
+Home Page 3 section yoxdur.
+1.Routing +
+2.Basket  +(count elave et)
+3.Detail +
+4.Formik +
+5.CRUD (table datalar refresh edende dushur ve refresh edende silinir.)
+6.Responsive+
+
+Elaveler.
+
+1.Helmet +
+2.SCSS
+3.Filter by Price+
+4.Search by Name+
+

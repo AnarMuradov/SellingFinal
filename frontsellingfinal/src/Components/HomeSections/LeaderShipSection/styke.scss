@@ -1,0 +1,75 @@
+.leadership {
+  width: 100%;
+  min-height: 800px;
+  &__container {
+    width: 70%;
+    min-height: 800px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        color: #adb5bd;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      h2 {
+        font-size: 40px;
+      }
+    }
+    &__allCard {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      justify-items: center;
+
+      &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 250px;
+        img {
+          width: 250px;
+          border-radius: 4px;
+        }
+        &__name{
+            color: #808080;
+            font-size: 18px;
+        }
+        &__job{
+            color: #cccccc;
+            font-size: 14px;
+
+        }
+        p{
+            color: #808080;
+            text-align: center;
+            width: 100%;
+        }
+        &__icon{
+            display: flex;
+            gap: 10px;
+            i{
+                width: 30px;
+                line-height: 30px;
+                text-align: center;
+                background-color: #777777;
+                color: white;
+                border-radius:50% ;
+                font-size: 12px;
+                
+            }
+        }
+
+      }
+    }
+  }
+}

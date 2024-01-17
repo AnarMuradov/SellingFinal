@@ -1,0 +1,99 @@
+.shopWithUs {
+  width: 100%;
+  min-height: 953px;
+  background-image: url(https://preview.colorlib.com/theme/selling/images/hero_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__bg {
+    background-color: #0000004a;
+    width: 100%;
+    min-height: 953px;
+    &__container{
+        width: 70%;
+        min-height: 953px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        &__content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 635px;
+            h1{
+                font-size: 80px;
+                color: white    ;
+            }
+            p{
+                font-size: 20px;
+                color: white;
+            }
+            &__btn{
+                display: flex; 
+                gap: 10px;
+                &__shopNow{
+                    width: 171px;
+                    height: 54px;
+                    background-color: transparent;
+                    border: 2px solid white;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: 250ms;
+                    &:hover{
+                    color: black;
+                    background-color: white;
+                    }
+                }
+                &__membership{
+                    width: 171px;
+                    height: 54px;
+                    background-color: white;
+                    border: 2px solid white;
+                    color: black;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: 250ms;
+                    &:hover{
+                    color: white;
+                    background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .shopWithUs{
+    background-position: center;
+    &__bg{
+        &__container{
+            &__content{
+                h1{
+                    font-size: 40px;
+                }
+                P{
+                    font-size: 14px;
+                }
+                &__btn{
+                    display: flex; 
+                    gap: 10px;
+                    &__shopNow{
+                        width: 100px;
+                        height: 35px;
+                        font-size: 12px;
+                        
+                    }
+                    &__membership{
+                        width: 100px;
+                        height: 35px;
+                        font-size: 12px;
+                       
+                    }
+                }
+
+            }
+        }
+    }
+  }
+  }

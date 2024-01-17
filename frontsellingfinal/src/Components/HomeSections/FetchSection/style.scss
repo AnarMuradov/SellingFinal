@@ -1,0 +1,157 @@
+.ourProducts {
+  width: 100%;
+  min-height: 1000px;
+  &__container {
+    width: 70%;
+    min-height: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    &__title {
+      max-width: 540px;
+      &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        span {
+          font-weight: 500;
+          color: #adb5bd;
+        }
+        h2 {
+          font-size: 40px;
+        }
+        P {
+          text-align: center;
+          color: #808080;
+        }
+      }
+    }
+    &__allCard {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      justify-items: center;
+      &__card {
+        max-width: 350px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        &__imgBg {
+          width: 350px;
+          height: 350px;
+
+          &__box {
+            overflow: hidden;
+            img {
+              width: 350px;
+              height: 350px;
+              transition: 300ms;
+              &:hover {
+                scale: 1.3;
+              }
+            }
+          }
+        }
+        &__title {
+          font-size: 18px;
+          cursor: pointer;
+          transition: 200ms;
+          &:hover {
+            color: orangered;
+          }
+        }
+        &__rating {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .fa-star {
+            color: orange;
+            cursor: pointer;
+          }
+          span {
+            color: #808080;
+          }
+          .fa-heart {
+            color: lightgray;
+            cursor: pointer;
+            transition: 200ms;
+            &:hover {
+              color: red;
+            }
+          }
+        }
+        &__text {
+          width: 300px;
+          font-size: 14px;
+          color: #808080;
+          text-align: center;
+        }
+        &__btn {
+          display: flex;
+          gap: 20px;
+          &__basket {
+            button {
+              width: 77px;
+              height: 34px;
+              background-color: black;
+              color: white;
+              cursor: pointer;
+              transition: 250ms;
+              font-size: 18px;
+              font-weight: bold;
+              border: 2px solid black;
+              &:hover {
+                color: black;
+                background-color: white;
+              }
+            }
+          }
+          &__detail {
+            button {
+              width: 77px;
+              height: 34px;
+              background-color: white;
+              color: black;
+              cursor: pointer;
+              transition: 250ms;
+              font-size: 18px;
+              font-weight: bold;
+              border: 2px solid black;
+              &:hover {
+                color: white;
+                background-color: black;
+              }
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        &__card {
+          max-width: 200px;
+        height: 450px;
+      
+        &__imgBg {
+          width: 200px;
+          height: 250px;
+
+          &__box {
+            img {
+              width: 200px;
+              height: 250px;
+            }
+          }
+        }
+        }
+      }
+    }
+  }
+}
